@@ -24,9 +24,20 @@ public class ekvationlosning {
                     x= -M/K;
                     JOptionPane.showMessageDialog(null,"X är = " + x);
 
-                } else (et == 2) {
+                } else if (et == 2) {
+                        String l = JOptionPane.showInputDialog(null,"Skriv värdet på P");
+                        String q = JOptionPane.showInputDialog(null,"Skriv värdet på Q ");
+                        double P = Double.parseDouble(l);
+                        double Q = Double.parseDouble(q);
+                            double x1;
+                            double x2;
+                                x1= -P/2  + Math.sqrt((-P/2)*(-P/2)-Q);
+                                x2= -P/2  - Math.sqrt((-P/2)*(-P/2)-Q);
+                                JOptionPane.showMessageDialog(null,"x1 och x2 är" + "\n" +
+                                        "x1 = " + x1 + "\n" +
+                                        "x2 = " + x2);
 
-        }
+             }
     }
 }
 
